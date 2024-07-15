@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("/assets/img/home-bg.jpg") no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(0, 0, 4);
+    padding: 20px 0; /* Increased padding for a bigger header */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align all header content */
+    width: 100%; /* Make header stretch full width */
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%; /* Make navigation take full width */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center align navigation */
+    flex-grow: 1; /* Occupy remaining space */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: lightblue; /* Changed color for hover effect */
+    box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue;
+}
+
+.header-image {
+    margin-right: 20px; /* Adjust spacing from navigation */
+}
+
+.header-image img {
+    width: 50px; /* Adjust size of the image */
+    height: auto;
+    border-radius: 50%; /* Optional: Add border-radius for circular image */
+}
+
+.container {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Add top margin to account for fixed header */
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content img {
+    max-width: 70%; /* Ensure image fits inside container */
+    max-height: 100%; /* Ensure image fits inside container */
+    height: auto;
+    width: auto; /* Prevent image from stretching */
+    margin-bottom: 10px; /* Optional: Add spacing between image and text */
+}
+
+h2 {
+    margin: 0;
+    color: white;
+}
+
+/* Ensure the footer is positioned correctly */
+footer {
+    background-color: rgb(0, 0, 4);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

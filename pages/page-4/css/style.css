@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("/assets/img/home-bg.jpg") no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: space-between; /* Ensure content stretches full height */
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(0, 0, 4);
+    padding: 20px 0; /* Increased padding for a bigger header */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align all header content */
+    width: 100%; /* Make header stretch full width */
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%; /* Make navigation take full width */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center align navigation */
+    flex-grow: 1; /* Occupy remaining space */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: lightblue; /* Changed color for hover effect */
+    box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue;
+}
+
+.header-image {
+    margin-right: 20px; /* Adjust spacing from navigation */
+}
+
+.header-image img {
+    width: 50px; /* Adjust size of the image */
+    height: auto;
+    border-radius: 50%; /* Optional: Add border-radius for circular image */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    margin-top: 100px; /* Adjust margin to separate from header */
+    position: relative; /* Ensure position for pseudo-element */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: lightblue; /* Glow color */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container:hover::before {
+    opacity: 1;
+}
+
+.container .content {
+    cursor: pointer;
+    position: relative; /* Ensure content stays above pseudo-element */
+    z-index: 1;
+}
+
+.container img {
+    width: 100px; /* Adjust size of the image */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: black; /* Default font color */
+    /* Add more specific styles for font size and color as needed */
+}
+
+/* Example: Font color and size options */
+.container.big-font h2 {
+    font-size: 2rem;
+}
+
+.container.red-font h2 {
+    color: red;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(0, 0, 4);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

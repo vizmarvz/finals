@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("/assets/img/home-bg.jpg") no-repeat center center fixed; /* Background image */
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(0, 0, 4);
+    padding: 20px 0; /* Increased padding for a bigger header */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align all header content */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center align navigation */
+    flex-grow: 1; /* Occupy remaining space */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: lightblue; /* Changed color for hover effect */
+    box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue;
+}
+
+.header-image {
+    margin-right: 20px; /* Adjust spacing from navigation */
+}
+
+.header-image img {
+    width: 50px; /* Adjust size of the image */
+    height: auto;
+    border-radius: 50%; /* Optional: Add border-radius for circular image */
+}
+
+/* Main Section Styles */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust height considering the new header height */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a max-width for the container */
+    text-align: center; /* Center the text inside the container */
+    margin: 0 10px; /* Center the container horizontally */
+    animation: bounce 3s ease-in-out infinite; /* Adjusted animation timing */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Default position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up */
+    }
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white; /* Circle border */
+    object-fit: cover;
+}
+
+.content {
+    margin-left: 20px;
+    text-align: center; /* Center-align text */
+    color: white;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    width: 40px; /* Increased size of social media icons */
+    height: 40px; /* Increased size of social media icons */
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Ensure the footer is positioned correctly */
+footer {
+    background-color: rgb(0, 0, 4);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
