@@ -1,19 +1,18 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url("/assets/img/home-bg.jpg") no-repeat center center fixed; /* Background image */
+    background: url("../../../assets/img/home-bg.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
-/* Header Styles */
 header {
     background-color: rgb(0, 0, 4);
-    padding: 20px 0; /* Increased padding for a bigger header */
+    padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center align all header content */
+    justify-content: center;
 }
 
 header nav ul {
@@ -21,12 +20,12 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center align navigation */
-    flex-grow: 1; /* Occupy remaining space */
+    justify-content: center;
+    flex-grow: 1;
 }
 
 header nav ul li {
-    margin: 0 15px; /* Space between navigation items */
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -38,18 +37,18 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: lightblue; /* Changed color for hover effect */
+    color: lightblue;
     box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue;
 }
 
 .header-image {
-    margin-right: 20px; /* Adjust spacing from navigation */
+    margin-right: 20px;
 }
 
 .header-image img {
-    width: 50px; /* Adjust size of the image */
+    width: 50px;
     height: auto;
-    border-radius: 50%; /* Optional: Add border-radius for circular image */
+    border-radius: 50%;
 }
 
 .container {
@@ -60,32 +59,32 @@ header nav ul li a:hover {
 }
 
 .left-container, .right-container {
-    width: 50%; /* Increased width for containers */
+    width: 50%;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .left-container {
     display: flex;
-    flex-direction: column; /* Stack containers vertically */
-    align-items: center; /* Center align items */
+    flex-direction: column;
+    align-items: center;
 }
 
 .glowing-container {
-    width: 250px; /* Increased size of the glowing containers */
+    width: 250px;
     height: 250px;
     background-color: #3498db;
     border-radius: 10px;
     box-shadow: 0 0 20px #3498db;
-    animation: slideAnimation 2s linear infinite alternate; /* Animation for left to right movement */
+    animation: slideAnimation 2s linear infinite alternate;
     overflow: hidden;
-    position: relative; /* Required for animation */
-    margin-bottom: 20px; /* Space between containers */
-    margin-top: -20px; /* Adjusted negative margin to move container higher */
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -20px;
 }
 
 .glowing-container:first-child {
-    margin-bottom: 40px; /* Increase space below the first container */
+    margin-bottom: 40px;
 }
 
 .glowing-container img {
@@ -99,21 +98,21 @@ header nav ul li a:hover {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(150px); /* Adjust distance of movement */
+        transform: translateX(150px);
     }
 }
 
 .content-container {
     background-color: #fff;
-    padding: 30px; /* Increased padding for larger size */
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Transition for zoom effect */
+    transition: transform 0.3s ease;
 }
 
 .content-container:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
 
 .content-container h2 {
@@ -124,7 +123,6 @@ header nav ul li a:hover {
     color: #666;
 }
 
-/* Ensure the footer is positioned correctly */
 footer {
     background-color: rgb(0, 0, 4);
     color: #fff;

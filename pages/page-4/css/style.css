@@ -2,30 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url("/assets/img/home-bg.jpg") no-repeat center center fixed; /* Background image */
+    background: url("../../../assets/img/home-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    justify-content: space-between; /* Ensure content stretches full height */
+    align-items: center;
+    justify-content: space-between;
     min-height: 100vh;
 }
 
-/* Header Styles */
 header {
     background-color: rgb(0, 0, 4);
-    padding: 20px 0; /* Increased padding for a bigger header */
+    padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center align all header content */
-    width: 100%; /* Make header stretch full width */
-    position: fixed; /* Fix the header at the top */
+    justify-content: center;
+    width: 100%;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
 
 header nav {
-    width: 100%; /* Make navigation take full width */
+    width: 100%;
 }
 
 header nav ul {
@@ -33,12 +32,12 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center align navigation */
-    flex-grow: 1; /* Occupy remaining space */
+    justify-content: center;
+    flex-grow: 1;
 }
 
 header nav ul li {
-    margin: 0 15px; /* Space between navigation items */
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -50,18 +49,18 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: lightblue; /* Changed color for hover effect */
+    color: lightblue;
     box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue;
 }
 
 .header-image {
-    margin-right: 20px; /* Adjust spacing from navigation */
+    margin-right: 20px;
 }
 
 .header-image img {
-    width: 50px; /* Adjust size of the image */
+    width: 50px;
     height: auto;
-    border-radius: 50%; /* Optional: Add border-radius for circular image */
+    border-radius: 50%;
 }
 
 .container {
@@ -72,8 +71,8 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    margin-top: 100px; /* Adjust margin to separate from header */
-    position: relative; /* Ensure position for pseudo-element */
+    margin-top: 100px;
+    position: relative;
 }
 
 .container::before {
@@ -84,7 +83,7 @@ header nav ul li a:hover {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    background-color: lightblue; /* Glow color */
+    background-color: lightblue;
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -96,12 +95,12 @@ header nav ul li a:hover {
 
 .container .content {
     cursor: pointer;
-    position: relative; /* Ensure content stays above pseudo-element */
+    position: relative;
     z-index: 1;
 }
 
 .container img {
-    width: 100px; /* Adjust size of the image */
+    width: 100px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -109,11 +108,9 @@ header nav ul li a:hover {
 .container h2 {
     font-size: 1.5rem;
     margin: 0;
-    color: black; /* Default font color */
-    /* Add more specific styles for font size and color as needed */
+    color: black;
 }
 
-/* Example: Font color and size options */
 .container.big-font h2 {
     font-size: 2rem;
 }
@@ -122,14 +119,13 @@ header nav ul li a:hover {
     color: red;
 }
 
-/* Footer Styles */
 footer {
     background-color: rgb(0, 0, 4);
     color: #fff;
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    position: fixed; /* Fix the footer at the bottom */
+    position: fixed;
     bottom: 0;
     z-index: 1000;
 }

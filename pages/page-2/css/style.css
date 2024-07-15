@@ -2,30 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url("/assets/img/home-bg.jpg") no-repeat center center fixed; /* Background image */
+    background: url("../../../assets/img/home-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    justify-content: center; /* Center align items vertically */
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
 }
 
-/* Header Styles */
 header {
     background-color: rgb(0, 0, 4);
-    padding: 20px 0; /* Increased padding for a bigger header */
+    padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center align all header content */
-    width: 100%; /* Make header stretch full width */
-    position: fixed; /* Fix the header at the top */
+    justify-content: center;
+    width: 100%;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
 
 header nav {
-    width: 100%; /* Make navigation take full width */
+    width: 100%;
 }
 
 header nav ul {
@@ -33,12 +32,12 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center align navigation */
-    flex-grow: 1; /* Occupy remaining space */
+    justify-content: center;
+    flex-grow: 1;
 }
 
 header nav ul li {
-    margin: 0 15px; /* Space between navigation items */
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -50,18 +49,18 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: lightblue; /* Changed color for hover effect */
+    color: lightblue;
     box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue;
 }
 
 .header-image {
-    margin-right: 20px; /* Adjust spacing from navigation */
+    margin-right: 20px;
 }
 
 .header-image img {
-    width: 50px; /* Adjust size of the image */
+    width: 50px;
     height: auto;
-    border-radius: 50%; /* Optional: Add border-radius for circular image */
+    border-radius: 50%;
 }
 
 .container {
@@ -77,7 +76,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px; /* Add top margin to account for fixed header */
+    margin-top: 100px;
 }
 
 .container:hover {
@@ -92,11 +91,11 @@ header nav ul li a:hover {
 }
 
 .container .content img {
-    max-width: 70%; /* Ensure image fits inside container */
-    max-height: 100%; /* Ensure image fits inside container */
+    max-width: 70%;
+    max-height: 100%;
     height: auto;
-    width: auto; /* Prevent image from stretching */
-    margin-bottom: 10px; /* Optional: Add spacing between image and text */
+    width: auto;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -104,7 +103,6 @@ h2 {
     color: white;
 }
 
-/* Ensure the footer is positioned correctly */
 footer {
     background-color: rgb(0, 0, 4);
     color: #fff;
